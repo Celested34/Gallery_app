@@ -11,7 +11,7 @@ class Nav extends Component {
 
                     <li><NavLink to='/dogs' onClick={this.props.navSelection} id='Dogs'>Dogs</NavLink></li>
 
-                    <li><NavLink to='/computer' onClick={this.props.navSelection} id='Computers'>Computers</NavLink></li>
+                    <li><NavLink to='/birds' onClick={this.props.navSelection} id='Birds'>Birds</NavLink></li>
                 </ul>
             </nav>
         );
