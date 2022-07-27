@@ -1,13 +1,22 @@
+
+//import dependencies
 import React from 'react';
 
-const Photo = (props) => {
-
-    let url = `https://live.staticflickr.com/${props.server}/${props.id}_${props.secret}.jpg`
-
+//creates main nav component with three buttons
+let Photo = (props) => {
+    let secret = props.secretId;
+    let photoId = props.photoId;
+    let serverId = props.serverId;
+    
+    //returns the photo
     return (
-        <li>
-            img src={url} alt="" />
-        </li>
+        <div className="photo-container">
+                <ul>
+                    <li>
+                        <img src={`https://live.staticflickr.com/${serverId}/${photoId}_${secret}_w.jpg`} alt=""/>
+                    </li>
+                </ul> 
+        </div>
     )
 }
 

@@ -1,21 +1,20 @@
-import React, { Component } from 'react';
-import { withRouter } from 'react-router-dom';
+
+//import dependencies 
+import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-class Nav extends Component {
-    render(){
-        return(
-            <nav classname="main-nav">
+//creates main nav component with three buttons
+let Nav = () => {
+    return (
+            <nav className = "main-nav">
                 <ul>
-                    <li><NavLink to='/cats' onClick={this.props.navSelection} id='Cats'>Cats</NavLink></li>
-
-                    <li><NavLink to='/dogs' onClick={this.props.navSelection} id='Dogs'>Dogs</NavLink></li>
-
-                    <li><NavLink to='/birds' onClick={this.props.navSelection} id='Birds'>Birds</NavLink></li>
+                    <li><NavLink to="/birds">Birds</NavLink></li>
+                    <li><NavLink to="/dogs">Dogs</NavLink></li>
+                    <li><NavLink to="/cookies">Cookies</NavLink></li>
                 </ul>
             </nav>
-        );
-    }
+    )
 }
 
-export default withRouter(Nav);
+//export the component
+export default Nav;
