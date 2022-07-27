@@ -1,9 +1,8 @@
+//import components
+import Photo from './Photo';
 
 //import dependencies
 import React from 'react';
-
-//import components
-import Photo from './Photo';
 
 //creates photo container component
 let PhotoContainer = (props)  => {

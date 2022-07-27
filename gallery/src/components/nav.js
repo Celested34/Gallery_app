@@ -1,7 +1,7 @@
 
 //import dependencies 
-import React from 'react';
 import { NavLink } from 'react-router-dom';
+import React from 'react';
 
 //creates main nav component with three buttons
 let Nav = () => {

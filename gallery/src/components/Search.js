@@ -1,7 +1,7 @@
 
 //import dependencies
-import React, { Component } from 'react';
 import { withRouter } from "react-router";
+import React, { Component } from 'react';
 
 //search component
 class Search extends Component {
